@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Liquidity AI+</title>
+  <meta name="description" content="AI that finds, executes, and protects your trades. Liquidity AI+ combines SMC signals with an AI Risk Manager and Trade Copier." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0c10;
+      --panel:#12151b;
+      --glass:rgba(255,255,255,.06);
+      --text:#eef2f6;
+      --muted:#9fb0c4;
+      --brand1:#00d2ff;
+      --brand2:#0061ff;
+      --accent:#ffd94a;
+      --border:rgba(255,255,255,.12);
+      --success:#2bd576;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1180px;margin:0 auto;padding:0 20px}
+    .hero{
+      position:relative;min-height:72vh;display:flex;align-items:center
+    }
+    .hero::before{
+      content:"";position:absolute;inset:0;
+      background:
+        linear-gradient(to bottom, rgba(11,12,16,.35), rgba(11,12,16,.95)),
+        url("https://images.unsplash.com/photo-1640340434855-0d3a2d7e0f2a?q=80&w=1600&auto=format&fit=crop");
+      background-size:cover;background-position:center;
+      filter:saturate(1.05);
+    }
+    .hero .inner{position:relative;z-index:1;padding:90px 0}
+    .badge{display:inline-block;padding:6px 12px;border:1px solid var(--accent);border-radius:999px;font-size:12px;color:var(--accent);backdrop-filter:blur(6px);background:rgba(0,0,0,.35)}
+    .hero h1{margin:14px 0 10px;font-weight:700;font-size:clamp(32px,5vw,56px);letter-spacing:.2px}
+    .hero p{margin:0 0 28px;color:var(--muted);font-size:clamp(16px,2.2vw,19px)}
+    .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{
+      display:inline-block;padding:12px 22px;border-radius:12px;font-weight:700;letter-spacing:.2px;
+      transition:.2s transform, .2s box-shadow;
+    }
+    .btn-primary{
+      color:#0b0c10;background:var(--accent);
+      box-shadow:0 10px 24px rgba(255,217,74,.22);
+    }
+    .btn-primary:hover{transform:translateY(-2px)}
+    .btn-ghost{
+      color:var(--text);border:1px solid var(--border);background:rgba(255,255,255,.04)
+    }
+    section{padding:76px 0}
+    h2{font-size:clamp(24px,3.2vw,34px);margin:0 0 18px;background:linear-gradient(90deg,var(--brand1),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .muted{color:var(--muted)}
+    .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border:1px solid var(--border);border-radius:16px;padding:18px 18px 20px;backdrop-filter:blur(6px)
+    }
+    .card h3{margin:8px 0 6px}
+    .pricing .plan{position:relative;overflow:hidden}
+    .price{font-size:32px;font-weight:700;color:var(--accent);margin:6px 0 12px}
+    .plan .pill{position:absolute;top:14px;right:14px;background:linear-gradient(90deg,var(--brand1),var(--brand2));padding:6px 10px;border-radius:999px;font-size:12px}
+    footer{border-top:1px solid var(--border);background:#0d1016;padding:26px 0;color:var(--muted);text-align:center}
+    .rise{animation:rise .5s ease-out both}
+    @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container inner rise">
+      <span class="badge">Early Access</span>
+      <h1>AI that Finds, Executes & <span style="color:var(--accent)">Protects</span> Your Trades</h1>
+      <p>Liquidity AI+ combines institutional-grade signals (liquidity sweeps, FVGs, BOS/CHoCH) with a prop-firm-safe Risk Manager and Trade Copier — so you never miss an opportunity or break the rules again.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Join the Waitlist</a>
+        <a class="btn btn-ghost" href="#pricing">See Pricing</a>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      <h2>The Problem</h2>
+      <div class="grid">
+        <div class="card"><h3>Retail Indicators Fail</h3><p class="muted">Laggy signals and whipsaws. We model institutional footprints instead.</p></div>
+        <div class="card"><h3>Risk Rules Get Broken</h3><p class="muted">Daily/max drawdown kills funded accounts. Our AI enforces limits in real time.</p></div>
+        <div class="card"><h3>Missed & Over-sized Trades</h3><p class="muted">Copy to all accounts, with AI auto-sizing based on account rules.</p></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h2>The Liquidity AI+ Solution</h2>
+      <div class="grid">
+        <div class="card rise"><h3>AI Smart Money Signals</h3><p class="muted">Scalp, Day, Swing across Gold, Nasdaq, BTC/ETH, and major FX. Each call includes probability scoring.</p></div>
+        <div class="card rise" style="animation-delay:.05s"><h3>AI Risk Manager</h3><p class="muted">Daily/max DD checks, auto-size to stay compliant, optional auto-block for risky entries.</p></div>
+        <div class="card rise" style="animation-delay:.1s"><h3>Trade Copier</h3><p class="muted">Mirror AI signals or your own trades across personal + prop accounts with safety filtering first.</p></div>
+        <div class="card rise" style="animation-delay:.15s"><h3>Performance Hub</h3><p class="muted">Backtests, win rates, account health — everything you need to stay consistent.</p></div>
+      </div>
+    </div>
+  </section>
+  <section id="pricing">
+    <div class="container">
+      <h2>Simple Pricing</h2>
+      <div class="grid pricing">
+        <div class="card plan">
+          <span class="pill">For Individuals</span>
+          <h3>Pro</h3>
+          <div class="price">$49<span class="muted">/mo</span></div>
+          <ul class="muted">
+            <li>AI Signals (Gold, Nasdaq, BTC, EURUSD)</li>
+            <li>1 Account Copier</li>
+            <li>AI Risk Alerts (warn-only)</li>
+            <li>Basic Dashboard</li>
+          </ul>
+          <p><a class="btn btn-primary" href="#" target="_blank">Get Started</a></p>
+        </div>
+        <div class="card plan">
+          <span class="pill">Most Popular</span>
+          <h3>Elite</h3>
+          <div class="price">$99<span class="muted">/mo</span></div>
+          <ul class="muted">
+            <li>Multi-Account Copier</li>
+            <li>Auto-Sizing & Auto-Blocking</li>
+            <li>Full Dashboard + Prop Firm Mode</li>
+            <li>Priority Support</li>
+          </ul>
+          <p><a class="btn btn-ghost" href="#" target="_blank">Go Elite</a></p>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:10px">Free plan (coming soon): 1 Gold day-trade signal per week.</p>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h2>Why Traders Love It</h2>
+      <div class="grid">
+        <div class="card"><p>“Liquidity AI+ helped me pass my prop firm challenge.”</p><p class="muted">— A. Morgan</p></div>
+        <div class="card"><p>“The AI stopped me from breaking daily DD after a loss.”</p><p class="muted">— J. Khan</p></div>
+        <div class="card"><p>“Finally, AI that protects as well as predicts.”</p><p class="muted">— S. Patel</p></div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    Liquidity AI+ © 2025 &nbsp;|&nbsp; <a href="mailto:info@liquidityai.io">info@liquidityai.io</a><br>
+    <small>*Liquidity AI+ provides market analysis and risk tools, not financial advice. Trading involves risk.*</small>
+  </footer>
+</body>
+</html>
